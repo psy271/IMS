@@ -21,6 +21,7 @@ namespace IMS
             init();
         }
 
+
         public void init()
         {
             GVariant.LOGIN_ID = "admin";
