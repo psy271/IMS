@@ -16,5 +16,10 @@ namespace IMS
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            labelPanel1.Labels[3].BackColor = Color.Red;
+        }
     }
 }

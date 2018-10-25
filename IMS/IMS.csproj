@@ -46,14 +46,91 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\SubFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\SubFormBase.Designer.cs">
+      <DependentUpon>SubFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DBCon.cs" />
+    <Compile Include="Common\GVariant.cs" />
+    <Compile Include="Control\DataGridViewExcel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\DataGridViewExcel.Designer.cs">
+      <DependentUpon>DataGridViewExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\GradientPanel.Designer.cs">
+      <DependentUpon>GradientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LabelPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\LabelPanel.Designer.cs">
+      <DependentUpon>LabelPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm0001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm0001.Designer.cs">
+      <DependentUpon>frm0001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm0003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm0003.Designer.cs">
+      <DependentUpon>frm0003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm0002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm0002.Designer.cs">
+      <DependentUpon>frm0002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Base\SubFormBase.resx">
+      <DependentUpon>SubFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\DataGridViewExcel.resx">
+      <DependentUpon>DataGridViewExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\GradientPanel.resx">
+      <DependentUpon>GradientPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\LabelPanel.resx">
+      <DependentUpon>LabelPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm0001.resx">
+      <DependentUpon>frm0001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm0003.resx">
+      <DependentUpon>frm0003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm0002.resx">
+      <DependentUpon>frm0002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +139,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +153,507 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_15_939745.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_15_939745 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_15_9397451.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_67_111124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Add_72903.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Add_Symbol_72864.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Application_Blueprint_72943.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Application_Design_72865.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Archive_72950.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_barcode_1608570.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_barcode_scanner_172089.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Blackboard_72851.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Blocknotes_72944.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Blocknotes_Blue_72951.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Blueprint_72867.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Blueprint_Blog_72866.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Blueprint_Website_72905.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Book_72952.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Bookmark_72953.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Box_72906.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Back_72907.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Back_72907 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Down_72908.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_FastForward_72909.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_First_72910.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Last_72911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Next_72912.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Play_Pause_72913.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Rec_72914.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Rewind_72915.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Stop_72917.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Sync_72918.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Button_Up_72919.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Calendar_72954.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_change_password_63985.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Chart_Bar_72869.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Chart_Bar_Big_72945.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Chart_Bar_D_Descending_72868.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Chart_Bar_Document_72955.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Chart_Bar_Files_Wide_72920.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Chart_Bar_Table_72957.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Chart_Graph_Ascending_72921.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Chart_Graph_Descending_72922.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Chart_Pie_72958.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Checkmark_72847.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_ClapBoard_72871.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Clipboard_72962.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Clipboard_Full_72961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Clock_72963.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Close_22138.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Colors_72964.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Comment_72853.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Comment_Add_72946.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Comment_Delete_72923.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Comment_Reply_72924.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Conversation_72854.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Dashboard_72965.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Denided_72925.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_document-new_23212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_document-save_118916.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Enter_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Enter_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_eraser_11864.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Error_Symbol_72846.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_exit_1736.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_exit_3226.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Fav_72860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_f-cross_256_282471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_72988.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Add_72966.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_AI_Illustrator_72967.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_BMP_Image_72968.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Checked_72969.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Content_72970.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_CSS_Stylesheet_72971.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Delete_72972.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Doc_Text_Word_72973.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Doc_Text_Word_72973 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Edit_72974.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_HTML_72975.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_JPG_Image_72976.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_List_72977.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_List_72977 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_MPMusic_72978.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_PDF_Acrobat_72979.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_PHP_72980.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_PNG_Image_72981.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_PSD_Photoshop_72982.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Table_72983.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Text_72984.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_Warning_72985.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_XLS_Excel_72986.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_File_ZIP_Archive_72987.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Files_Copy_72989.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_72883.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_Add_72897.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_Chart_72873.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_Checked_72874.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_Edit_72898.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_Empty_72875.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_Favorites_72876.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_Info_72877.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_Sync_72880.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Folder_Upload_72881.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Gear_72991.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_gnome-session-hibernate_30681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Help_72927.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Home_72899.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-111-search_314478.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-111-search_314689.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_iMac_72928.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Info_72930.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Info_Light_72929.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Info_Light_72929 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Location_72992.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_MacBookAir_72849.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_MacBookPro_72850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_72857.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Add_72931.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Compose_72900.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Delete_72932.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Gmail_72855.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Gmail_72855 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Old_72856.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Open_72993.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Reply_72934.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Verified_72901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mail_Warning_72935.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Mails_72936.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_News_72861.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Pen_72902.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Pen_72902 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Pencil_72862.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Pin_72937.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_printer_39263.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Project_72995.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Rating_72863.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Search_72996.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Sticky_72997.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_system-search_118797.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_table_excel_64759.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Target_72998.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Trash_Delete_72947.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Trash_Delete_72947 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Trash_Full_72948.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_User_72939.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_user-alt_285645.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Valid_72940.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Valid_72940 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Warning_72941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Warning_72941 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_App_72893.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_App_Cols_72884.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_App_Header_72885.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_App_Results_72888.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_App_Sidebar_72889.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_App_SplitScreen_72891.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_App_View_72892.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_Config_72894.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_Generic_72895.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Window_Sidebar_72896.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Windows_72858.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Wooden_Box_72942.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Zoom_In_72999.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Zoom_Out_73000.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,13 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.labelPanel2 = new IMS.Control.LabelPanel();
+            this.labelPanel1 = new IMS.Control.LabelPanel();
+            this.SuspendLayout();
+            // 
+            // labelPanel2
+            // 
+            this.labelPanel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPanel2.Count = 15;
+            this.labelPanel2.Location = new System.Drawing.Point(114, 161);
+            this.labelPanel2.Name = "labelPanel2";
+            this.labelPanel2.Size = new System.Drawing.Size(423, 27);
+            this.labelPanel2.TabIndex = 1;
+            // 
+            // labelPanel1
+            // 
+            this.labelPanel1.BackColor = System.Drawing.SystemColors.Control;
+            this.labelPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPanel1.Count = 10;
+            this.labelPanel1.Location = new System.Drawing.Point(114, 118);
+            this.labelPanel1.Name = "labelPanel1";
+            this.labelPanel1.Size = new System.Drawing.Size(423, 27);
+            this.labelPanel1.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelPanel2);
+            this.Controls.Add(this.labelPanel1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Control.LabelPanel labelPanel1;
+        private Control.LabelPanel labelPanel2;
     }
 }
 
