@@ -78,28 +78,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm0001.cs">
+    <Compile Include="Sys\frm0001.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm0001.Designer.cs">
+    <Compile Include="Sys\frm0001.Designer.cs">
       <DependentUpon>frm0001.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm0003.cs">
+    <Compile Include="Sys\frm0003.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm0003.Designer.cs">
+    <Compile Include="Sys\frm0003.Designer.cs">
       <DependentUpon>frm0003.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm0002.cs">
+    <Compile Include="Sys\frm0002.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm0002.Designer.cs">
+    <Compile Include="Sys\frm0002.Designer.cs">
       <DependentUpon>frm0002.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="Sys\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
+    <Compile Include="Sys\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -119,16 +119,16 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm0001.resx">
+    <EmbeddedResource Include="Sys\frm0001.resx">
       <DependentUpon>frm0001.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm0003.resx">
+    <EmbeddedResource Include="Sys\frm0003.resx">
       <DependentUpon>frm0003.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm0002.resx">
+    <EmbeddedResource Include="Sys\frm0002.resx">
       <DependentUpon>frm0002.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
+    <EmbeddedResource Include="Sys\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -654,6 +654,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_Zoom_Out_73000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sys\PopUp\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
