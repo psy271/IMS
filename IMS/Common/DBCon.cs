@@ -47,7 +47,7 @@ namespace Common
                 adp.Fill(ds);
                 return ds;
             }
-            catch
+            catch(Exception ex)
             {
                 return null;
             }
